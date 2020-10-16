@@ -63,4 +63,4 @@ product/framework/QtiTelephonyServicelibrary.jar
 
 # Telephony (qti-telephony-common)
 # Smali edited: Removed `miui.os.Build` dependency in `WifiManagerCompatible.isNeeded()`
-product/framework/qti-telephony-common.jar|4016ebe196c0573ccb477181441dfdc887f87250
+#product/framework/qti-telephony-common.jar|4016ebe196c0573ccb477181441dfdc887f87250
