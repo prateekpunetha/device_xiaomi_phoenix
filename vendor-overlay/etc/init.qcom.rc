@@ -1,3 +1,6 @@
+on property:ro.boot.hwc=*
+    setprop vendor.boot.hwc ${ro.boot.hwc}
+
 on property:init.svc.vendor.cnss_diag=running
     stop vendor.cnss_diag
 
