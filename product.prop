@@ -46,3 +46,7 @@ debug.sf.earlyGl.app.duration=21000000
 # Set system properties identifying the chipset
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM7150
+
+# Transcoding related property.
+debug.media.transcoding.codec_max_operating_rate_720P=240
+debug.media.transcoding.codec_max_operating_rate_1080P=120
