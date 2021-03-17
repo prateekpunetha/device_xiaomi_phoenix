@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_phoenix
+    android.hardware.lights-service.qti-xiaomi_phoenix
 
 # NFC
 PRODUCT_PACKAGES += \
