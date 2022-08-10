@@ -150,6 +150,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Vendor overlay
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/vendor-overlay/ueventd.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/ueventd.rc
+
 # WiFi
 PRODUCT_PACKAGES += \
     WifiOverlay
