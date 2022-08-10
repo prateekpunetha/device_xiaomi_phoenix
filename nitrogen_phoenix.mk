@@ -9,9 +9,6 @@ $(call inherit-product, device/xiaomi/phoenix/device.mk)
 # Inherit some common Nitrogen stuff.
 $(call inherit-product, vendor/nitrogen/products/common.mk)
 
-# Gapps
-$(call inherit-product, vendor/google/gms/config.mk)
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nitrogen_phoenix
 PRODUCT_DEVICE := phoenix
