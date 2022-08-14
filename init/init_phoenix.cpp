@@ -124,7 +124,7 @@ void vendor_load_properties() {
     region = GetProperty("ro.boot.hwc", "");
 
     if (region == "CN") {
-        char const fp[] = "google/sunfish/sunfish:11/RQ3A.210705.001/7380771:user/release-keys";
+        char const fp[] = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
 
         for (const auto &source : ro_props_default_source_order) {
             set_ro_build_prop(source, "fingerprint", fp);
@@ -140,7 +140,7 @@ void vendor_load_properties() {
         property_override("ro.adb.secure", "0");
         property_override("ro.control_privapp_permissions", "log");
     } else if (region == "INDIA") {
-       char const fp[] = "google/sunfish/sunfish:11/RQ3A.210705.001/7380771:user/release-keys";
+       char const fp[] = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
 
         for (const auto &source : ro_props_default_source_order) {
             set_ro_build_prop(source, "fingerprint", fp);
