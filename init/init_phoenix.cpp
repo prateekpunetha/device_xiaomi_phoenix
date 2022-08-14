@@ -101,7 +101,7 @@ static const char *snet_prop_key[] = {
         property_override(snet_prop_key[i], snet_prop_value[i]);
     }
 
-     chmod("/sys/fs/selinux/enforce", 0640);
+    chmod("/sys/fs/selinux/enforce", 0640);
     chmod("/sys/fs/selinux/policy", 0440);
 }
 
@@ -127,33 +127,33 @@ void vendor_load_properties() {
         char const fp[] = "google/sunfish/sunfish:11/RQ3A.210705.001/7380771:user/release-keys";
 
         for (const auto &source : ro_props_default_source_order) {
-
-            property_override("ro.build.fingerprint", fp);
-            property_override("ro.bootimage.build.fingerprint", fp);
-            property_override("ro.system_ext.build.fingerprint", fp);
             set_ro_build_prop(source, "fingerprint", fp);
             set_ro_product_prop(source, "brand", "Redmi");
             set_ro_product_prop(source, "device", "phoenix");
             set_ro_product_prop(source, "model", "Redmi K30");
         }
-        property_override("ro.adb.secure", "0");
+        property_override("ro.build.fingerprint", fp);
+        property_override("ro.bootimage.build.fingerprint", fp);
+        property_override("ro.system_ext.build.fingerprint", fp);
         property_override("ro.build.description", "phoenix-user 11 RKQ1.200826.002 V12.5.6.0.RGHINXM release-keys");
+
+        property_override("ro.adb.secure", "0");
         property_override("ro.control_privapp_permissions", "log");
     } else if (region == "INDIA") {
        char const fp[] = "google/sunfish/sunfish:11/RQ3A.210705.001/7380771:user/release-keys";
 
         for (const auto &source : ro_props_default_source_order) {
-
-            property_override("ro.build.fingerprint", fp);
-            property_override("ro.bootimage.build.fingerprint", fp);
-            property_override("ro.system_ext.build.fingerprint", fp);
             set_ro_build_prop(source, "fingerprint", fp);
             set_ro_product_prop(source, "brand", "POCO");
             set_ro_product_prop(source, "device", "phoenixin");
             set_ro_product_prop(source, "model", "POCO X2");
         }
-        property_override("ro.adb.secure", "0");
+        property_override("ro.build.fingerprint", fp);
+        property_override("ro.bootimage.build.fingerprint", fp);
+        property_override("ro.system_ext.build.fingerprint", fp);
         property_override("ro.build.description", "phoenixin-user 11 RKQ1.200826.002 V12.5.6.0.RGHINXM release-keys");
+
+        property_override("ro.adb.secure", "0");
         property_override("ro.control_privapp_permissions", "log");
 
      // Workaround SafetyNet

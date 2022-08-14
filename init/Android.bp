@@ -16,8 +16,10 @@
 cc_library_static {
     name: "libinit_phoenix",
     srcs: ["init_phoenix.cpp"],
+    shared_libs: [
+        "libbase",
+    ],
     recovery_available: true,
-    whole_static_libs: ["libbase"],
     include_dirs: [
         "system/core/init"
     ]
